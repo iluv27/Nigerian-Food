@@ -1,0 +1,1093 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* font-family: 'Alegreya', serif; (h1)
+font-family: 'Almendra', serif; (h2-h6)
+font-family: 'Berkshire Swash', cursive; (h1)
+font-family: 'Merriweather', serif; (Body) */
+
+h1 {
+    font-family: 'Berkshire Swash', cursive, 'Alegreya', serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Berkshire Swash', cursive, 'Almendra', serif;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+p, a, button {
+    font-family: 'Merriweather', serif;
+    line-height: 1.6rem;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+body {
+    width: 1280px;
+    height: auto;
+    margin: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* This is the Nav Styling */
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #F9FCFB;
+    position: absolute;
+    z-index: 5;
+}
+
+nav img {
+    width: 90px;
+    height: 90px;
+    margin-left: 50px;
+    margin-top: 0;
+}
+
+/* This is section 1 styling */
+#firstSection {
+    width: auto;
+    height: 100vh;
+    background-image: url(/images/backgroundfood.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.emptydiv {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 100vh;
+    background-color: #000000b2;
+}
+
+.firstSectionElement {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    z-index: 3;
+    color: #F9FCFB;
+    text-align: center;
+}
+
+#firstSection p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#firstSection a, #firstSection button {
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 20px auto;
+    border-color: transparent;
+    letter-spacing: 0.5px;
+    background-color: #47b44c;
+    color: #F9FCFB;
+}
+
+#firstSection button:hover {
+    cursor: pointer;
+    background-color: #F9FCFB;
+    color: #47b44c;
+}
+
+.firstSectionElement span {
+    color: #388E3C;
+}
+
+
+/* This is section 2 styling */
+#secondSection, #fourthSection, #sixthSection {
+padding-top: 100px;
+padding-bottom: 100px;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+#secondSection {
+    height: 100vh;
+    text-align: center;
+    background-color: #DDEEDF;
+}
+
+.featureItems{
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+    margin: 30px auto auto auto;
+}
+
+.featureItems .item1 {
+    width: 330px;
+    height: auto;
+    padding: 40px 15px;
+    margin: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
+    background-color: #F9FCFB;
+}
+
+.featureItems .item1 .emptyDiv2 {
+    width: 70px;
+    height: 1px;
+    background-color: #388E3C;
+    margin: 20px auto;
+}
+
+.featureItems img {
+    width: 30px;
+    height: 30px;
+}
+
+.featureItems .img {
+    border: 1px solid #21BF73;
+    border-radius: 100px;
+    padding: 10px 12px;
+    width: min-content;
+    margin: auto;
+}
+
+.identifier {
+    font-size: 0.8rem;
+    font-weight: 300;
+    font-family: 'Berkshire Swash', cursive;
+    /* font-style: oblique; */
+}
+
+.featureItems h4 {
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+/* This is Section 3 Styling */
+#thirdSection {
+    background-color: #153617;
+    color: #F9FCFB;
+    height: auto;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#thirdSection h4 {
+font-size: 1.2rem;
+}
+
+#thirdSection h2 {
+    margin: 20px auto 0 auto;
+}
+
+.foodDisplay {
+    margin: 50px auto auto auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 0;
+    text-align: left;
+    border: none;
+    box-shadow: 2px 4px 20px #f9fcfba4;
+}
+
+.foodDisplay .display {
+    border: 1px solid #000;
+    padding: 25px 20px;
+    width: 330px;
+    height: 180px;
+    transition: transform ease-in 0.4s;
+    position: relative;
+    z-index: 3;
+}
+
+.foodDisplay .display:hover{
+    z-index: 4;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.foodDisplay .display0:hover {
+    transform: scale(1.05);
+}
+
+.foodDisplay .display0 {
+    position: relative;
+    z-index: 1;
+    height: auto;
+    border: 1px solid #000;
+    background-image: url(/images/suya1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.fade2 {
+    animation: myAnim1 1s ease-in-out 1s 1 normal forwards;
+}
+
+@keyframes myAnim1 {
+	0% {
+		transform: scale(0.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.display1, .display3, .display4, .display6 {
+    background-color: #388E3C;
+    color: #F9FCFB;
+} 
+
+.display2, .display5 {
+    background-color: #F9FCFB;
+    color: #193e1b;
+}
+
+.foodDisplay p {
+    font-size: 0.8rem;
+}
+
+.foodDisplay h4 {
+    padding: 10px 0px;
+}
+
+
+/* STILL SECTION 3 STYLING */
+#container1 {
+    display: inline;
+    position: absolute;
+	transform: translate(-50%, -50%);
+}
+.steam {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-top: -30px;
+  margin-left: 5px;
+  z-index: 0;
+  opacity: 0;
+}
+
+#steam1 {
+  -webkit-animation: steam1 4s ease-out infinite;
+  animation: steam1 4s ease-out infinite;
+}
+
+#steam3 {
+  -webkit-animation: steam1 4s ease-out 1s infinite;
+  animation: steam1 4s ease-out 1s infinite;
+}
+
+@-webkit-keyframes steam1 {
+  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+  100% {transform: translateY(-50px) translateX(-10px) scale(1); opacity: 0;}
+}
+
+@keyframes steam1 {
+  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+  100% {transform: translateY(-50px) translateX(-10px) scale(1); opacity: 0;}
+}
+
+#steam2 {
+  -webkit-animation: steam2 4s ease-out 0.5s infinite;
+  animation: steam2 4s ease-out 0.5s infinite;
+}
+
+#steam4 {
+  -webkit-animation: steam2 4s ease-out 1.5s infinite;
+  animation: steam2 4s ease-out 1.5s infinite;
+}
+
+@-webkit-keyframes steam2 {
+  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+  100% {transform: translateY(-50px) translateX(20px) scale(1); opacity: 0;}
+}
+
+@keyframes steam2 {
+  0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+  100% {transform: translateY(-50px) translateX(20px) scale(1); opacity: 0;}
+}
+
+#cup {
+  z-index: 1;
+}
+
+#cup-body {
+  position: absolute;
+  height: 15px;
+  width: 40px;
+  border-radius: 0 0 50px 50px;
+  background-color: #fff;
+  margin: auto;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+#saucer {
+  position: absolute;
+  height: 5px;
+  width: 40px;  
+  border-radius: 0 0 100px 100px;
+  background-color: #F9F9F9;
+  margin-top: 15px;
+  margin-left: 1px;
+  z-index: 2;
+}
+
+/* END OF SECTION STILL 3 STYLING */
+
+
+/* This the section 4 styling */
+#fourthSection {
+    width: auto;
+    text-align: center;
+    background-color: transparent;
+}
+
+.fourthSectionItems {
+   border: 2px solid #388E3C;
+   border-radius: 10px;
+   position: relative;
+   width: 1000px;
+   height: 501px;
+   margin: 50px auto auto auto;
+}
+
+.innerFourthSection {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+#fourthSection .firstDiv {
+    position: absolute;
+    z-index: -1;
+    top: -1px;
+    right: 0;
+    background-color: #388E3C;
+    width: 75%;
+    height: 500px;
+}
+
+#fourthSection .secondDiv, #fourthSection .secondDiv2, #fourthSection .secondDiv3, #fourthSection .secondDiv4 {
+    align-self: center;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    margin: 100px 0 auto 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#fourthSection .secondDiv {
+    background-image: url(/images/Egusi.jpg);
+}
+
+#fourthSection .secondDiv2{
+    background-image: url(/images/jollof1.jpg);
+}
+
+#fourthSection .secondDiv3{
+    background-image: url(/images/akara1.jpg);
+}
+
+#fourthSection .secondDiv4 {
+    background-image: url(/images/beans1.jpg);
+}
+
+#fourthSection .thirdDiv {
+    margin-top: 50px;
+    background-color:#F9FCFB;
+    width: 600px;
+    height: 400px;
+    color: #193e1b;
+    padding: 70px 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#fourthSection .thirdDiv h4 {
+    font-size: 1.5rem;
+}
+
+#fourthSection .fourthParagraph {
+    padding: 30px 0;
+    text-align: left;
+}
+
+.fourthSectionButton {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.fourthSectionButton p {
+    align-self: center;
+    font-size: 1.1rem;
+    padding-right: 20px;
+}
+
+.fourthSectionButton i {
+    vertical-align: middle;
+    font-size: 1.6rem;
+    padding: 5px 5px;
+}
+
+.fourthSectionButton a{
+    width: 150px;
+    height: 45px;
+    border: none;
+}
+
+
+.fourthSectionButton button {
+    width: 150px;
+    height: 45px;
+    border-radius: 30px;
+    border: 2px solid #47b44c;;
+    background-color: #47b44c;
+    color: #F9FCFB;
+    font-size: 1rem;
+}
+
+.fourthSectionButton button:hover {
+    cursor: pointer;
+    background-color: #F9FCFB;
+    color: #193e1b;
+    border: 2px solid #193e1b;
+}
+
+/* Slideshow container */
+.slideshow-container3 {
+    height: auto;
+  max-width: auto;
+  position: relative;
+}
+
+.slideshow-container2 {
+    height: 500px;
+    max-width: 1200px;
+    position: relative;
+  margin: 0px auto 20px auto;
+  background-color: transparent;
+}
+
+.dot1 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #388E3C;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .fade1 {
+    animation: myAnim 0.2s ease-in-out 0s 1 normal forwards;
+  }
+  
+  
+  @keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Fifth Section Styling */
+
+#fifthSection{
+    background-image: url(/images/backgroundTestimonial.jpg);
+    background-size: 150%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    animation: backgroundScroll 60s ease-in-out 1s infinite;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@keyframes backgroundScroll {
+    0% { background-position: 50% 50%; }
+    33% { background-position: 1% 50%; }
+    40% { background-position: 1% 50%; }
+    66% { background-position: 99% 50%; }
+    75% { background-position: 99% 50%; }
+    100% { background-position: 50% 50%; }
+}
+
+.testimonial {
+    text-align: center;
+    color: #f2f2f2;
+    padding: 20px;
+}
+
+.testimonial .img1, .testimonial .img2, .testimonial .img3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 30px auto ;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testimonial .img1 {
+    background-image: url(/images/customer1.jpg);  
+}
+
+.testimonial .img2{
+background-image: url(/images/customer3.jpg);
+}
+
+.testimonial .img3{
+    background-image: url(/images/customer2.jpg);
+}
+
+.testimonial p {
+    margin: auto;
+    width: 650px;
+    padding-bottom: 20px;
+}
+
+.testimonial h5 {
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.mySlides, .mySlides1 {display: none}
+
+/* Slideshow container */
+.slideshow-container1 {
+    height: 350px;
+  max-width: 800px;
+  position: relative;
+  margin: 0px auto 20px auto;
+  background-color: rgba(0, 0, 0, 0.856);
+  box-shadow: 1px 1px 10px rgba(249, 252, 251, 0.34);
+}
+
+.slideshow-container {
+    height: 350px;
+    max-width: 1000px;
+    position: relative;
+  margin: 0px auto 20px auto;
+  background-color: #0000005f;
+  border-radius: 60%;
+}
+
+/* Next & previous buttons */
+.prev, .next, .prev1, .next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #47b44c;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px 0px 0px 3px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next, .next1 {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev1 {
+    left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .prev1:hover, .next1:hover {
+  background-color: #47b44c;
+  color: #F9FCFB;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #808080;
+}
+
+.active1, .dot1:hover {
+    background-color: #272727;
+  }
+
+/* Fading animation */
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .prev1, .next1 {font-size: 11px}
+}
+/* FIFTH SECTION STYLING ENDS */
+
+
+/* Sixth Section Styling */
+#sixthSection {
+    text-align: center;
+    background-color: #F9FCFB;
+}
+
+#sixthSection .Six3 {
+    width: 1280px;
+    height: 350px;
+    margin: 200px auto 50px -20px;
+    position: absolute;
+    background-color: #47b44c;
+    z-index: 3;
+}
+
+.SixthDivs{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    z-index: 7;
+}
+
+#sixthSection .Six1 {
+    width: 50%;
+    height: 450px;
+    background-color: #FD5E53;
+    color: #F9FCFB;
+    margin: auto;
+    padding: 50px 30px;
+}
+
+#sixthSection .Six2 {
+    width: 50%;
+    height: 450px;
+    background-image: url(/images/ordernowimage.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sixthSection h2 {
+    padding-bottom: 20px;
+}
+
+#sixthSection a, #sixthSection button {
+    margin-top: 40px;
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    color: #193e1b;
+}
+
+#sixthSection .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sixthSection a i {
+    padding-right: 5px;
+    font-size: 1.1rem;
+}
+
+#sixthSection button:hover {
+    cursor: pointer;
+    background-color: #47b44c;
+    color: #F9FCFB;
+}
+
+
+/* This is the Payment Options styling */
+.paymentSection {
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 1250px;
+    background-color: #fff;
+}
+
+.paymentSection img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+/* This is the contact section styling */
+map {
+    width: 1280px;
+}
+
+#contactPage {
+    width: auto;
+    height: auto;
+    background-color: #47b44c;
+    color: #F9FCFB;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.Contactpage1 {
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#contactPage h3 {
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+
+#contactPage h4 {
+    font-size: 0.9rem;
+    padding-bottom: 20px;
+}
+
+.contactFirstSide {
+    width: 50%;
+    padding: 40px;
+    margin: 30px auto;
+}
+
+.Contactpage1 .location {
+    margin: 20px auto;
+}
+
+.Contactpage1 h5 {
+    padding: 10px 0;
+}
+
+.Contactpage1 .location p {
+    font-size: 0.8rem;
+}
+
+.Contactpage1 .location i {
+    color: #FD5E53;
+    font-size: 1.1rem;
+}
+
+.contactSpan{
+    color: #7de382;
+}
+
+.contactSecondSide {
+    width: 400px;
+    height: 500px;
+    background-color: #DDEEDF;
+    margin: 50px auto 50px auto;
+    padding: 50px;
+    color: #193e1b;
+    border-radius: 20px;
+}
+
+.contactSecondSide .input {
+width: 300px;
+height: 2rem;
+margin: 30px auto;
+padding: 5px;
+display: block;
+border-radius: 5px;
+}
+
+.inputTags .submit {
+    height: 6rem;
+}
+
+.inputTags span {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+}
+
+.termsService {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.inputTags a, .inputTags button {
+width: 300px;
+height: 2.2rem;
+border-radius: 5px;
+color: #F9FCFB;
+background-color: #47b44c;
+}
+
+.inputTags button:hover {
+    cursor: pointer;
+    color: #193e1b;
+background-color: #F9FCFB;
+}
+
+
+/* FOOTER STYLING */
+footer {
+    height: 1rem;
+    text-align: center;
+    background-color: #F9FCFB;
+    color: #193e1b;
+    padding: 5px;   
+}
+
+footer p {
+     font-size: 0.6rem;
+     font-style: italic;
+}
+
+
+  /* CSS for screens that are 320 pixels or less will be put in this section */
+  @media screen and (min-width:1280) and (max-width:1460px) {
+    body { width: 1460px; }
+    .emptydiv { width: 1460px;}
+    #sixthSection .Six3 { width: 1460px;}
+    map { width: 1460px;}
+    #secondSection {height: auto;}
+  }
+
+@media screen and (max-width:700px) {
+
+    body {width: 100vw; }
+    .emptydiv { width: 100vw;}
+    #sixthSection .Six3 { width: 100vw;}
+    map { width: 100vw;}
+    #secondSection {height: auto;}
+    p { font-size: 0.95rem;}
+
+    /* FIRST SECTION RESTYLING */
+    .firstSectionElement {width: 90%;}
+
+    nav img {margin-left: 10px;}
+
+    /* SECOND SECTION RE-STYLING */
+    .featureItems {
+        width: 100%;
+        flex-direction: column;
+    }  
+
+    .featureItems .item1 {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /* THIRD SECTION RESTYLING */
+
+    #container1 {left: 45%; }
+    .foodDisplay {
+        width: max-content;
+        grid-auto-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+
+    }
+
+    /* FOURTH SECTION RESTYLING */
+    #fourthSection {width: 100vw; }
+    .slideshow-container2 {
+        height: max-content;
+        max-width: fit-content;
+        margin: 0px auto 70px auto;
+  }
+
+  .fourthSectionItems {width: fit-content; height: max-content;}
+
+  #fourthSection .firstDiv {
+    top: 263px;
+    width: 100%;
+    height: 570px;
+  }
+
+  .innerFourthSection {
+    flex-direction: column;
+    width: fit-content;
+}
+
+#fourthSection .secondDiv, #fourthSection .secondDiv2, #fourthSection .secondDiv3, #fourthSection .secondDiv4 {
+    width: 300px;
+    height: 300px;
+    margin: 50px 0 auto 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+}
+
+
+
+#fourthSection .thirdDiv {
+    margin-top: 0;
+    width: 330px;
+    height: 420px;
+    padding: 70px 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#fourthSection .fourthParagraph { text-align: justify;}
+
+/* FIFTH SECTION STYLING */
+#fifthSection {
+    width: 100vw;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.testimonial {padding: 20px;}
+
+.slideshow-container {
+    height: 350px;
+    margin: 0px auto 10px auto;
+}
+
+.slideshow-container1 {
+    height: 360px;
+    width: 90vw;
+    margin: auto;
+}
+
+.testimonial .img1, .testimonial .img2, .testimonial .img3 {
+    width: 70px;
+    height: 70px;
+}
+
+.testimonial p {
+    width: auto;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding: auto 5px 20px 5px;
+    padding-right: 5px;
+}
+
+.prev:hover, .next:hover {
+    background-color: transparent;
+    color: #47b44c;
+  }
+
+.prev, .next {
+    padding: 10px;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+/* SIXTH SECTION RESTYLING */
+#sixthSection .Six3 {
+    height: 740px;
+    margin: 270px auto 50px -20px;
+}
+
+.SixthDivs {
+    width: auto;
+    flex-direction: column;
+}
+
+#sixthSection .Six1 {
+    width: 90%;
+    height: 500px;
+    padding: 50px 20px;
+}
+
+#sixthSection .Six2 {
+    width: 100%;
+    height: 450px;
+}
+
+/* PAYMENT SECTION RESTYLING */
+.paymentSection img {
+    margin: 20px;
+    width: 130px;
+    height: 130px;
+}
+
+.paymentSection {
+    padding: 10px;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+#contactPage {
+    width: auto;
+    padding-top: 50px;
+}
+
+.Contactpage1 {
+    width: auto;
+    flex-direction: column;
+}
+
+.contactFirstSide {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.contactSecondSide {
+    width: 95%;
+    margin: 20px auto 50px auto;
+    padding: 40px;
+}
+
+.contactSecondSide .input {width: 100%;}
+.inputTags a, .inputTags button { width: 100%;}
+
+}
