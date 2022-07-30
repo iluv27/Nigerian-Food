@@ -64,7 +64,7 @@ nav img {
 #firstSection {
     width: auto;
     height: 100vh;
-    background-image: url(/images/backgroundfood.jpg);
+    background-image: url(images/backgroundfood.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -238,7 +238,7 @@ font-size: 1.2rem;
     z-index: 1;
     height: auto;
     border: 1px solid #000;
-    background-image: url(/images/suya1.jpg);
+    background-image: url(images/suya1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -410,19 +410,19 @@ font-size: 1.2rem;
 }
 
 #fourthSection .secondDiv {
-    background-image: url(/images/Egusi.jpg);
+    background-image: url(images/Egusi.jpg);
 }
 
 #fourthSection .secondDiv2{
-    background-image: url(/images/jollof1.jpg);
+    background-image: url(images/jollof1.jpg);
 }
 
 #fourthSection .secondDiv3{
-    background-image: url(/images/akara1.jpg);
+    background-image: url(images/akara1.jpg);
 }
 
 #fourthSection .secondDiv4 {
-    background-image: url(/images/beans1.jpg);
+    background-image: url(images/beans1.jpg);
 }
 
 #fourthSection .thirdDiv {
@@ -533,7 +533,7 @@ font-size: 1.2rem;
 /* Fifth Section Styling */
 
 #fifthSection{
-    background-image: url(/images/backgroundTestimonial.jpg);
+    background-image: url(images/backgroundTestimonial.jpg);
     background-size: 150%;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -570,15 +570,15 @@ font-size: 1.2rem;
 }
 
 .testimonial .img1 {
-    background-image: url(/images/customer1.jpg);  
+    background-image: url(images/customer1.jpg);  
 }
 
 .testimonial .img2{
-background-image: url(/images/customer3.jpg);
+background-image: url(images/customer3.jpg);
 }
 
 .testimonial .img3{
-    background-image: url(/images/customer2.jpg);
+    background-image: url(images/customer2.jpg);
 }
 
 .testimonial p {
@@ -721,7 +721,7 @@ background-image: url(/images/customer3.jpg);
 #sixthSection .Six2 {
     width: 50%;
     height: 450px;
-    background-image: url(/images/ordernowimage.jpeg);
+    background-image: url(images/ordernowimage.jpeg);
     background-size: cover;
     background-position: center;
 }
