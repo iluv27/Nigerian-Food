@@ -915,6 +915,9 @@ footer p {
     p { font-size: 0.95rem;}
 
     /* FIRST SECTION RESTYLING */
+    #firstSection {
+        width: 100vw;
+        height: 100vh;}
     .firstSectionElement {width: 90%;}
 
     nav img {margin-left: 10px;}
