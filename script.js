@@ -12,32 +12,32 @@
 
 // To change the first display
 document.querySelector(".display1").addEventListener("click", function () {
-    document.querySelector(".display0").style.backgroundImage = "url(/images/jollof2.jpg)"
+    document.querySelector(".display0").style.backgroundImage = "url(images/jollof2.jpg)"
 })
 
 // To change the second display
 document.querySelector(".display2").addEventListener("click", function () {
-    document.querySelector(".display0").style.backgroundImage = "url(/images/akara2.jpg)"
+    document.querySelector(".display0").style.backgroundImage = "url(images/akara2.jpg)"
 })
 
 // To change the third display
 document.querySelector(".display3").addEventListener("click", function () {
-    document.querySelector(".display0").style.backgroundImage = "url(/images/beans2.jpg)"
+    document.querySelector(".display0").style.backgroundImage = "url(images/beans2.jpg)"
 })
 
 // To change the fourth display
 document.querySelector(".display4").addEventListener("click", function () {
-    document.querySelector(".display0").style.backgroundImage = "url(/images/Egusi2.jpg)"
+    document.querySelector(".display0").style.backgroundImage = "url(images/Egusi2.jpg)"
 })
 
 // To change the fifth display
 document.querySelector(".display5").addEventListener("click", function () {
-    document.querySelector(".display0").style.backgroundImage = "url(/images/stew2.jpg)"
+    document.querySelector(".display0").style.backgroundImage = "url(images/stew2.jpg)"
 })
 
 // To change the sixth display
 document.querySelector(".display6").addEventListener("click", function () {
-    document.querySelector(".display0").style.backgroundImage = "url(/images/puff2.jpg)"
+    document.querySelector(".display0").style.backgroundImage = "url(images/puff2.jpg)"
 })
 
 
